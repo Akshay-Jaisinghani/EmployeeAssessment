@@ -20,7 +20,6 @@ public class Employee {
     private String phoneNumber;
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
     private List<EmployeeAddress> addresses;
 
     // Getters and setters
